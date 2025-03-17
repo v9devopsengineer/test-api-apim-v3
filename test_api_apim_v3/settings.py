@@ -29,6 +29,11 @@ SECRET_KEY = 'django-insecure-vo7n^mc0y6tpnu(u80v6m6dz9_9(46zwms^q!09oxwjb!1_#-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://test-api-apim-v3-asg0fphje5c5fwhb.eastus2-01.azurewebsites.net',  # Your Azure Web App domain
+    # Add other trusted origins if needed
+]
+
 ALLOWED_HOSTS = ['.azurewebsites.net', 'localhost']
 
 
